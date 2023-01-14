@@ -56,7 +56,6 @@ function deleteTodo(index: number){
 body{
   background: linear-gradient(#05833d, #222979);
   background-repeat: no-repeat;
-  height: 100vh;
 }
 .todo {
   display: flex;
