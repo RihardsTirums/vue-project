@@ -4,12 +4,14 @@
         <div v-if="state.isLoading" class="loading lds-hourglass d-flex mx-auto">LOADING...</div>
             <ul v-else class="ms-4">
                 <li v-for="character in state.characters" :key="character.id" class="card m-2 ms-5 p-3 rounded-0 shadow cards-style text-white fs-4" style="width:10em;">
+                    <router-link :to="`/character/` + character.id">{{ character.name }}
                     <img :src="character.image" alt="character image">
                     {{ character.id }}
                     {{ character.name }}
                     {{ character.status }}
                     {{ character.species }}
                     {{ character.type }}
+                </router-link>
                 </li>
             </ul>
     </div>
@@ -55,7 +57,7 @@ const fetchCharacters = (url:string) => {
         .catch(() => {
             state.isLoading = false;
         });
-    }, 7000);
+    }, 1000);
 }
 
 </script>

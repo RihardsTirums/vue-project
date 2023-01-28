@@ -9,6 +9,7 @@ import 'bootstrap/dist/js/bootstrap.js';
   <RouterLink class="text-design" to="/">Home</RouterLink>
   <RouterLink class="text-design2" to="/about">About</RouterLink>
   <RouterLink class="text-design3" to="/characters">Characters</RouterLink>
+  <RouterLink class="text-design3" to="/form">Form</RouterLink>
 </nav>
   <RouterView/>
 </template>
